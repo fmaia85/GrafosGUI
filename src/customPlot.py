@@ -5,6 +5,7 @@ class CustomPlot:
 
     def __init__(self) -> None:
         self.fig, self.ax = plt.subplots()
+    #}__init__
 
     def plotDijkstra(self, graph, current, checking, visited, path):
         self.ax.clear()
@@ -20,6 +21,9 @@ class CustomPlot:
         )
         plt.draw()
         plt.waitforbuttonpress()
+    #}plotDijkstra
     
     def keepShowing(self):
         plt.show()
+    #}keepShowing
+#}CustomPlot
